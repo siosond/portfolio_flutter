@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:portfolio_flutter/widgets/common/noto_sans_text.dart';
 
 class ExperienceSubHeader extends StatelessWidget {
   final String text;
@@ -7,9 +9,9 @@ class ExperienceSubHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(
+    return NotoSansText(
       text,
-      style: const TextStyle(
+      style: GoogleFonts.notoSans(
         fontSize: 16,
         fontWeight: FontWeight.bold,
       ),

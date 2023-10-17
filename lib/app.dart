@@ -1,5 +1,5 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:flutter/material.dart';
+import 'package:fluent_ui/fluent_ui.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_flutter/screens/portfolio.dart';
 
@@ -8,17 +8,15 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return FluentApp(
+      home: const Portfolio(title: 'Portfolio'),
       locale: context.locale,
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
+      themeMode: ThemeMode.dark,
+      theme: FluentThemeData(brightness: Brightness.light),
+      darkTheme: FluentThemeData(brightness: Brightness.dark),
       title: 'Portfolio',
-      theme: ThemeData(
-        textTheme: GoogleFonts.notoSansTextTheme(Theme.of(context).textTheme),
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
-        useMaterial3: true,
-      ),
-      home: const Portfolio(title: 'Portfolio'),
     );
   }
 }
