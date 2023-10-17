@@ -18,7 +18,15 @@ class _PortfolioState extends State<Portfolio> {
         backgroundColor: Theme.of(context).colorScheme.surfaceVariant,
         title: Text(widget.title),
       ),
-      body: const Experience(),
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: EdgeInsets.symmetric(
+            vertical: MediaQuery.of(context).size.height * 0.05,
+            horizontal: MediaQuery.of(context).size.width * 0.1,
+          ),
+          child: const Experience(),
+        ),
+      ),
     );
   }
 }
