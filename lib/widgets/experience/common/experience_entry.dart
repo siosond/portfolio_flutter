@@ -20,16 +20,14 @@ class ExperienceEntry extends StatelessWidget {
     return ResponsiveBuilder(
       builder: (context, sizingInformation) {
         if (sizingInformation.isMobile) {
-          return Expanded(
-            child: Column(
-              children: [
-                ExperiencePeriod(
-                  icon: icon,
-                  text: period,
-                ),
-                ExperienceCard(children: children),
-              ],
-            ),
+          return Column(
+            children: [
+              ExperiencePeriod(
+                icon: icon,
+                text: period,
+              ),
+              ExperienceCard(children: children),
+            ],
           );
         }
         return Row(
