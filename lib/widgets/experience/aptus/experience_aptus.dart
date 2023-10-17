@@ -12,13 +12,13 @@ class ExperienceAptus extends StatelessWidget {
   Widget build(BuildContext context) {
     return ExperienceEntry(
       icon: Icons.work_history,
-      period: tr("exp_aptus_year_period"),
+      period: tr('exp_aptus_year_period'),
       children: [
-        ExperienceHeader(tr("exp_aptus_header")),
-        ExperienceSubHeader(tr("exp_aptus_position")),
+        ExperienceHeader(tr('exp_aptus_header')),
+        ExperienceSubHeader(tr('exp_aptus_position')),
         ExperienceItems(
           children: [
-            Text("• ${tr("exp_aptus_item_1")}"),
+            Text('• ${tr('exp_aptus_item_1')}'),
           ],
         ),
       ],

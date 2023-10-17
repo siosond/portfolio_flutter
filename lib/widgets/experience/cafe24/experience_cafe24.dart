@@ -12,23 +12,23 @@ class ExperienceCafe24 extends StatelessWidget {
   Widget build(BuildContext context) {
     return ExperienceEntry(
       icon: Icons.work_history,
-      period: tr("exp_cafe24_year_period"),
+      period: tr('exp_cafe24_year_period'),
       children: [
-        ExperienceHeader(tr("exp_cafe24_header")),
-        ExperienceSubHeader(tr("exp_cafe24_app_dev")),
+        ExperienceHeader(tr('exp_cafe24_header')),
+        ExperienceSubHeader(tr('exp_cafe24_app_dev')),
         ExperienceItems(
           children: [
-            Text("• ${tr("exp_cafe24_item_1")}"),
-            Text("• ${tr("exp_cafe24_item_2")}"),
-            Text("• ${tr("exp_cafe24_item_3")}"),
-            Text("• ${tr("exp_cafe24_item_4")}"),
+            Text('• ${tr('exp_cafe24_item_1')}'),
+            Text('• ${tr('exp_cafe24_item_2')}'),
+            Text('• ${tr('exp_cafe24_item_3')}'),
+            Text('• ${tr('exp_cafe24_item_4')}'),
           ],
         ),
-        ExperienceSubHeader(tr("exp_cafe24_web_dev")),
+        ExperienceSubHeader(tr('exp_cafe24_web_dev')),
         ExperienceItems(
           children: [
-            Text("• ${tr("exp_cafe24_item_5")}"),
-            Text("• ${tr("exp_cafe24_item_6")}"),
+            Text('• ${tr('exp_cafe24_item_5')}'),
+            Text('• ${tr('exp_cafe24_item_6')}'),
           ],
         ),
       ],
