@@ -12,13 +12,13 @@ class PortfolioApp extends StatelessWidget {
       locale: context.locale,
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
-      title: 'Flutter Demo',
+      title: 'Portfolio',
       theme: ThemeData(
         textTheme: GoogleFonts.notoSansTextTheme(Theme.of(context).textTheme),
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Portfolio'),
     );
   }
 }
