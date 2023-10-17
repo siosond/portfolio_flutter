@@ -10,7 +10,7 @@ void main() async {
       fallbackLocale: const Locale('en'),
       path: 'assets/translations',
       supportedLocales: const [Locale('en')],
-      child: const PortfolioApp(),
+      child: const App(),
     ),
   );
 }
