@@ -1,11 +1,13 @@
 import 'package:fluent_ui/fluent_ui.dart';
 
-class ExperienceCard extends StatelessWidget {
+class PortfolioCard extends StatelessWidget {
+  final CrossAxisAlignment crossAxisAlignment;
   final List<Widget> children;
 
-  const ExperienceCard({
+  const PortfolioCard({
     required this.children,
     super.key,
+    this.crossAxisAlignment = CrossAxisAlignment.start,
   });
 
   @override
@@ -14,7 +16,7 @@ class ExperienceCard extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(32.0),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: crossAxisAlignment,
           children: children,
         ),
       ),

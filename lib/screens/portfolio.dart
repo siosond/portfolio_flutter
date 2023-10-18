@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_flutter/widgets/about/about_pane.dart';
 import 'package:portfolio_flutter/widgets/common/portfolio_text.dart';
-import 'package:portfolio_flutter/widgets/experience/experience.dart';
+import 'package:portfolio_flutter/widgets/experience/experience_pane.dart';
 import 'package:portfolio_flutter/widgets/projects/projects.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
@@ -100,7 +100,7 @@ class _PortfolioState extends State<Portfolio> {
                       horizontal: MediaQuery.of(context).size.width * 0.1,
                       vertical: MediaQuery.of(context).size.height * 0.05,
                     ),
-                    child: const Experience(),
+                    child: const ExperiencePane(),
                   ),
                 ),
               ),

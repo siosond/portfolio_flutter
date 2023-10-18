@@ -1,5 +1,5 @@
 import 'package:fluent_ui/fluent_ui.dart';
-import 'package:portfolio_flutter/widgets/experience/common/experience_sub_header.dart';
+import 'package:portfolio_flutter/widgets/common/portfolio_small_header.dart';
 
 class ProjectExpander extends StatelessWidget {
   final bool initiallyExpanded;
@@ -18,7 +18,7 @@ class ProjectExpander extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Expander(
-      header: ExperienceSubHeader(text),
+      header: PortfolioSmallHeader(text),
       initiallyExpanded: initiallyExpanded,
       content: SizedBox(
         height: height,

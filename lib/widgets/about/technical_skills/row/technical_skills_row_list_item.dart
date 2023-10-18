@@ -1,8 +1,8 @@
 import 'package:fluent_ui/fluent_ui.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:portfolio_flutter/widgets/common/portfolio_text.dart';
-import 'package:portfolio_flutter/widgets/experience/common/experience_card.dart';
-import 'package:portfolio_flutter/widgets/experience/common/experience_sub_header.dart';
+import 'package:portfolio_flutter/widgets/common/portfolio_card.dart';
+import 'package:portfolio_flutter/widgets/common/portfolio_small_header.dart';
 
 class TechnicalSkillsRowListItem extends StatelessWidget {
   final String body;
@@ -21,13 +21,13 @@ class TechnicalSkillsRowListItem extends StatelessWidget {
     return Expanded(
       child: Padding(
         padding: const EdgeInsets.all(4.0),
-        child: ExperienceCard(children: [
+        child: PortfolioCard(children: [
           SvgPicture.asset(
             svg,
             height: 64,
             width: 64,
           ),
-          ExperienceSubHeader(title),
+          PortfolioSmallHeader(title),
           PortfolioText(body),
         ]),
       ),
