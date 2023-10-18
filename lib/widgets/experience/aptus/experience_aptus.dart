@@ -1,6 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:portfolio_flutter/widgets/common/noto_sans_text.dart';
+import 'package:portfolio_flutter/widgets/common/portfolio_text.dart';
 import 'package:portfolio_flutter/widgets/experience/common/experience_entry.dart';
 import 'package:portfolio_flutter/widgets/experience/common/experience_header.dart';
 import 'package:portfolio_flutter/widgets/experience/common/experience_items.dart';
@@ -19,7 +19,7 @@ class ExperienceAptus extends StatelessWidget {
         ExperienceSubHeader(tr('experience_aptus_position')),
         ExperienceItems(
           children: [
-            NotoSansText('• ${tr('experience_aptus_item_1')}'),
+            PortfolioText('• ${tr('experience_aptus_item_1')}'),
           ],
         ),
       ],

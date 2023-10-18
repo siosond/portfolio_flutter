@@ -1,7 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:fluent_ui/fluent_ui.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio_flutter/widgets/common/noto_sans_text.dart';
+import 'package:portfolio_flutter/widgets/common/portfolio_text.dart';
 import 'package:portfolio_flutter/widgets/projects/common/project_expander.dart';
 import 'package:portfolio_flutter/widgets/projects/common/project_tech_stack.dart';
 import 'package:portfolio_flutter/widgets/projects/common/project_tile.dart';
@@ -16,7 +16,7 @@ class Projects extends StatelessWidget {
       children: [
         Padding(
           padding: const EdgeInsets.all(8.0),
-          child: NotoSansText(
+          child: PortfolioText(
             tr("project_header"),
             style: GoogleFonts.notoSans(
               fontSize: 24,
@@ -26,7 +26,7 @@ class Projects extends StatelessWidget {
         ),
         Padding(
           padding: const EdgeInsets.all(8.0),
-          child: NotoSansText(
+          child: PortfolioText(
             tr('project_cafe24_sub'),
             style: GoogleFonts.notoSans(fontSize: 16),
           ),
@@ -72,15 +72,15 @@ class Projects extends StatelessWidget {
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Card(child: NotoSansText('Android')),
+                    child: Card(child: PortfolioText('Android')),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Card(child: NotoSansText('Kotlin')),
+                    child: Card(child: PortfolioText('Kotlin')),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Card(child: NotoSansText('Java')),
+                    child: Card(child: PortfolioText('Java')),
                   ),
                 ],
               ),
@@ -103,15 +103,15 @@ class Projects extends StatelessWidget {
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Card(child: NotoSansText('Android')),
+                    child: Card(child: PortfolioText('Android')),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Card(child: NotoSansText('Flutter')),
+                    child: Card(child: PortfolioText('Flutter')),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Card(child: NotoSansText('Dart')),
+                    child: Card(child: PortfolioText('Dart')),
                   ),
                 ],
               ),
@@ -134,15 +134,15 @@ class Projects extends StatelessWidget {
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Card(child: NotoSansText('Android')),
+                    child: Card(child: PortfolioText('Android')),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Card(child: NotoSansText('Flutter')),
+                    child: Card(child: PortfolioText('Flutter')),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Card(child: NotoSansText('Dart')),
+                    child: Card(child: PortfolioText('Dart')),
                   ),
                 ],
               ),

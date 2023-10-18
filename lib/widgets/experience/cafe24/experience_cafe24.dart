@@ -1,6 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:portfolio_flutter/widgets/common/noto_sans_text.dart';
+import 'package:portfolio_flutter/widgets/common/portfolio_text.dart';
 import 'package:portfolio_flutter/widgets/experience/common/experience_entry.dart';
 import 'package:portfolio_flutter/widgets/experience/common/experience_header.dart';
 import 'package:portfolio_flutter/widgets/experience/common/experience_items.dart';
@@ -19,17 +19,17 @@ class ExperienceCafe24 extends StatelessWidget {
         ExperienceSubHeader(tr('experience_cafe24_app_dev')),
         ExperienceItems(
           children: [
-            NotoSansText('• ${tr('experience_cafe24_item_1')}'),
-            NotoSansText('• ${tr('experience_cafe24_item_2')}'),
-            NotoSansText('• ${tr('experience_cafe24_item_3')}'),
-            NotoSansText('• ${tr('experience_cafe24_item_4')}'),
+            PortfolioText('• ${tr('experience_cafe24_item_1')}'),
+            PortfolioText('• ${tr('experience_cafe24_item_2')}'),
+            PortfolioText('• ${tr('experience_cafe24_item_3')}'),
+            PortfolioText('• ${tr('experience_cafe24_item_4')}'),
           ],
         ),
         ExperienceSubHeader(tr('experience_cafe24_web_dev')),
         ExperienceItems(
           children: [
-            NotoSansText('• ${tr('experience_cafe24_item_5')}'),
-            NotoSansText('• ${tr('experience_cafe24_item_6')}'),
+            PortfolioText('• ${tr('experience_cafe24_item_5')}'),
+            PortfolioText('• ${tr('experience_cafe24_item_6')}'),
           ],
         ),
       ],

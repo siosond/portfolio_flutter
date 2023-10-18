@@ -1,6 +1,6 @@
 import 'package:fluent_ui/fluent_ui.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio_flutter/widgets/common/noto_sans_text.dart';
+import 'package:portfolio_flutter/widgets/common/portfolio_text.dart';
 
 class ExperienceSubHeader extends StatelessWidget {
   final String text;
@@ -9,7 +9,7 @@ class ExperienceSubHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return NotoSansText(
+    return PortfolioText(
       text,
       style: GoogleFonts.notoSans(
         fontSize: 16,

@@ -3,7 +3,7 @@
 import 'dart:js' as js;
 
 import 'package:fluent_ui/fluent_ui.dart';
-import 'package:portfolio_flutter/widgets/common/noto_sans_text.dart';
+import 'package:portfolio_flutter/widgets/common/portfolio_text.dart';
 
 class ProjectTile extends StatelessWidget {
   final String image;
@@ -29,7 +29,7 @@ class ProjectTile extends StatelessWidget {
           Expanded(
             child: Padding(
               padding: const EdgeInsets.all(4.0),
-              child: NotoSansText(
+              child: PortfolioText(
                 name,
                 overflow: TextOverflow.ellipsis,
                 maxLines: 1,

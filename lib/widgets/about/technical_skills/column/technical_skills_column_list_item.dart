@@ -1,6 +1,6 @@
 import 'package:fluent_ui/fluent_ui.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:portfolio_flutter/widgets/common/noto_sans_text.dart';
+import 'package:portfolio_flutter/widgets/common/portfolio_text.dart';
 import 'package:portfolio_flutter/widgets/experience/common/experience_sub_header.dart';
 
 class SkillsColumnListItem extends StatelessWidget {
@@ -35,7 +35,7 @@ class SkillsColumnListItem extends StatelessWidget {
               ExperienceSubHeader(title),
             ],
           ),
-          subtitle: NotoSansText(body),
+          subtitle: PortfolioText(body),
         ),
       ),
     );

@@ -3,7 +3,7 @@ import 'package:fluent_ui/fluent_ui.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_flutter/widgets/about/about_pane.dart';
-import 'package:portfolio_flutter/widgets/common/noto_sans_text.dart';
+import 'package:portfolio_flutter/widgets/common/portfolio_text.dart';
 import 'package:portfolio_flutter/widgets/experience/experience.dart';
 import 'package:portfolio_flutter/widgets/projects/projects.dart';
 import 'package:responsive_builder/responsive_builder.dart';
@@ -29,7 +29,7 @@ class _PortfolioState extends State<Portfolio> {
         title: ResponsiveBuilder(
           builder: (context, sizingInformation) {
             if (sizingInformation.isMobile) {
-              return NotoSansText(
+              return PortfolioText(
                 widget.title,
                 style: GoogleFonts.notoSans(
                   fontSize: 14,
@@ -39,7 +39,7 @@ class _PortfolioState extends State<Portfolio> {
             }
             return Padding(
               padding: const EdgeInsets.only(top: 16.0),
-              child: NotoSansText(
+              child: PortfolioText(
                 widget.title,
                 style: GoogleFonts.notoSans(
                   fontSize: 24,
@@ -59,7 +59,7 @@ class _PortfolioState extends State<Portfolio> {
         items: [
           PaneItem(
             icon: const Icon(Icons.person),
-            title: NotoSansText(tr('about')),
+            title: PortfolioText(tr('about')),
             body: SingleChildScrollView(
               child: Padding(
                 padding: EdgeInsets.symmetric(
@@ -72,7 +72,7 @@ class _PortfolioState extends State<Portfolio> {
           ),
           PaneItem(
             icon: const Icon(Icons.work),
-            title: NotoSansText(tr('experience')),
+            title: PortfolioText(tr('experience')),
             body: SingleChildScrollView(
               child: Padding(
                 padding: EdgeInsets.symmetric(
@@ -86,7 +86,7 @@ class _PortfolioState extends State<Portfolio> {
           // PaneItemSeparator(),
           PaneItem(
             icon: const Icon(Icons.terminal),
-            title: NotoSansText(tr('projects')),
+            title: PortfolioText(tr('projects')),
             body: SingleChildScrollView(
               child: Padding(
                 padding: EdgeInsets.symmetric(
@@ -100,8 +100,8 @@ class _PortfolioState extends State<Portfolio> {
           // PaneItemSeparator(),
           PaneItem(
             icon: const Icon(Icons.message),
-            title: NotoSansText(tr('contact')),
-            body: NotoSansText(tr('contact')),
+            title: PortfolioText(tr('contact')),
+            body: PortfolioText(tr('contact')),
           ),
         ],
       ),

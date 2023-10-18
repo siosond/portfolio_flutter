@@ -1,7 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:fluent_ui/fluent_ui.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio_flutter/widgets/common/noto_sans_text.dart';
+import 'package:portfolio_flutter/widgets/common/portfolio_text.dart';
 import 'package:portfolio_flutter/widgets/experience/aptus/experience_aptus.dart';
 import 'package:portfolio_flutter/widgets/experience/cafe24/experience_cafe24.dart';
 import 'package:portfolio_flutter/widgets/experience/pup/experience_pup.dart';
@@ -16,7 +16,7 @@ class Experience extends StatelessWidget {
       children: [
         Padding(
           padding: const EdgeInsets.all(8.0),
-          child: NotoSansText(
+          child: PortfolioText(
             tr("work_experience"),
             style: GoogleFonts.notoSans(
               fontSize: 24,
@@ -34,7 +34,7 @@ class Experience extends StatelessWidget {
         ),
         Padding(
           padding: const EdgeInsets.all(8.0),
-          child: NotoSansText(
+          child: PortfolioText(
             tr("education"),
             style: GoogleFonts.notoSans(
               fontSize: 24,

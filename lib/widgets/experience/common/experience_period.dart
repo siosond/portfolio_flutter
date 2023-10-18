@@ -1,6 +1,6 @@
 import 'package:fluent_ui/fluent_ui.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio_flutter/widgets/common/noto_sans_text.dart';
+import 'package:portfolio_flutter/widgets/common/portfolio_text.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 class ExperiencePeriod extends StatelessWidget {
@@ -24,7 +24,7 @@ class ExperiencePeriod extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: NotoSansText(
+                child: PortfolioText(
                   text,
                   style: GoogleFonts.notoSans(fontSize: 16),
                 ),
@@ -45,7 +45,7 @@ class ExperiencePeriod extends StatelessWidget {
               child: SizedBox(
                 width: 128,
                 child: Center(
-                  child: NotoSansText(
+                  child: PortfolioText(
                     text,
                     style: GoogleFonts.notoSans(fontSize: 16),
                   ),

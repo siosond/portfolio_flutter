@@ -3,7 +3,7 @@ import 'package:fluent_ui/fluent_ui.dart';
 import 'package:portfolio_flutter/widgets/about/about_header.dart';
 import 'package:portfolio_flutter/widgets/about/resume_button.dart';
 import 'package:portfolio_flutter/widgets/about/technical_skills/technical_skills_list.dart';
-import 'package:portfolio_flutter/widgets/common/noto_sans_text.dart';
+import 'package:portfolio_flutter/widgets/common/portfolio_text.dart';
 import 'package:portfolio_flutter/widgets/experience/common/experience_header.dart';
 
 class AboutPane extends StatelessWidget {
@@ -20,7 +20,7 @@ class AboutPane extends StatelessWidget {
         ),
         Padding(
           padding: const EdgeInsets.all(8.0),
-          child: NotoSansText(tr('about_introduction_item')),
+          child: PortfolioText(tr('about_introduction_item')),
         ),
         const Padding(
           padding: EdgeInsets.all(8.0),
