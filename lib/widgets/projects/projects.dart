@@ -33,7 +33,7 @@ class Projects extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: ProjectExpander(
-            height: 245,
+            height: 280,
             text: tr('proj_cafe24_plusapp'),
             initiallyExpanded: true,
             children: [
@@ -73,7 +73,7 @@ class Projects extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: ProjectExpander(
-            height: 52,
+            height: 58,
             text: tr('proj_cafe24_crew_apps'),
             children: [
               ProjectTile(
@@ -88,7 +88,7 @@ class Projects extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: ProjectExpander(
-            height: 52,
+            height: 58,
             text: tr('proj_cafe24_promotion_bridge'),
             children: [
               ProjectTile(

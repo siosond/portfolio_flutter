@@ -22,13 +22,18 @@ class ProjectTile extends StatelessWidget {
     return ListTile(
       title: Row(
         children: [
-          Image.asset(image, height: 32),
-          const SizedBox(width: 8),
+          Padding(
+            padding: const EdgeInsets.all(4.0),
+            child: Image.asset(image, height: 32),
+          ),
           Expanded(
-            child: NotoSansText(
-              name,
-              overflow: TextOverflow.ellipsis,
-              maxLines: 1,
+            child: Padding(
+              padding: const EdgeInsets.all(4.0),
+              child: NotoSansText(
+                name,
+                overflow: TextOverflow.ellipsis,
+                maxLines: 1,
+              ),
             ),
           ),
         ],
