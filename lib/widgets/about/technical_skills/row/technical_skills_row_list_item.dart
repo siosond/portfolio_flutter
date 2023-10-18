@@ -1,8 +1,8 @@
 import 'package:fluent_ui/fluent_ui.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:portfolio_flutter/widgets/common/portfolio_text.dart';
-import 'package:portfolio_flutter/widgets/common/portfolio_card.dart';
-import 'package:portfolio_flutter/widgets/common/portfolio_small_header.dart';
+import 'package:portfolio_flutter/widgets/portfolio/portfolio_card.dart';
+import 'package:portfolio_flutter/widgets/portfolio/portfolio_small_header.dart';
+import 'package:portfolio_flutter/widgets/portfolio/portfolio_text.dart';
 
 class TechnicalSkillsRowListItem extends StatelessWidget {
   final String body;

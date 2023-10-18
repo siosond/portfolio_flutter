@@ -1,7 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:fluent_ui/fluent_ui.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio_flutter/widgets/common/portfolio_text.dart';
+import 'package:portfolio_flutter/widgets/portfolio/portfolio_text.dart';
 import 'package:portfolio_flutter/widgets/projects/common/project_expander.dart';
 import 'package:portfolio_flutter/widgets/projects/common/project_tech_stack.dart';
 import 'package:portfolio_flutter/widgets/projects/common/project_tile.dart';

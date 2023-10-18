@@ -1,5 +1,5 @@
 import 'package:fluent_ui/fluent_ui.dart';
-import 'package:portfolio_flutter/widgets/common/portfolio_text.dart';
+import 'package:portfolio_flutter/widgets/portfolio/portfolio_text.dart';
 
 class YearPeriodColumn extends StatelessWidget {
   final IconData icon;

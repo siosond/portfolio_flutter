@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class ProjectTechStack extends StatelessWidget {
   final List<Widget> children;
+
   const ProjectTechStack({
     required this.children,
     super.key,

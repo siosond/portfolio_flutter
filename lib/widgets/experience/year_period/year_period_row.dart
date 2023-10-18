@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio_flutter/widgets/common/portfolio_text.dart';
+import 'package:portfolio_flutter/widgets/portfolio/portfolio_text.dart';
 
 class YearPeriodRow extends StatelessWidget {
   final IconData icon;

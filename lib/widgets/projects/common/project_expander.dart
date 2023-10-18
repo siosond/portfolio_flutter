@@ -1,5 +1,5 @@
 import 'package:fluent_ui/fluent_ui.dart';
-import 'package:portfolio_flutter/widgets/common/portfolio_small_header.dart';
+import 'package:portfolio_flutter/widgets/portfolio/portfolio_small_header.dart';
 
 class ProjectExpander extends StatelessWidget {
   final bool initiallyExpanded;

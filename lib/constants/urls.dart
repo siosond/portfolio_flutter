@@ -1,3 +1,4 @@
 class Urls {
-  static const resume = 'https://staging-portfolio.siosond.avalonartisans.online/downloads/resume.pdf';
+  static const resume =
+      'https://staging-portfolio.siosond.avalonartisans.online/downloads/resume.pdf';
 }

@@ -3,7 +3,7 @@
 import 'dart:js' as js;
 
 import 'package:fluent_ui/fluent_ui.dart';
-import 'package:portfolio_flutter/widgets/common/portfolio_text.dart';
+import 'package:portfolio_flutter/widgets/portfolio/portfolio_text.dart';
 
 class ProjectTile extends StatelessWidget {
   final String image;

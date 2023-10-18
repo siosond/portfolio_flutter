@@ -1,10 +1,10 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:portfolio_flutter/widgets/common/portfolio_header.dart';
-import 'package:portfolio_flutter/widgets/common/portfolio_small_header.dart';
-import 'package:portfolio_flutter/widgets/common/portfolio_text.dart';
 import 'package:portfolio_flutter/widgets/experience/experience_entry_item/experience_entry_item.dart';
 import 'package:portfolio_flutter/widgets/experience/experience_entry_item/experience_entry_item_contents.dart';
+import 'package:portfolio_flutter/widgets/portfolio/portfolio_header.dart';
+import 'package:portfolio_flutter/widgets/portfolio/portfolio_small_header.dart';
+import 'package:portfolio_flutter/widgets/portfolio/portfolio_text.dart';
 
 class AptusWorkExperience extends StatelessWidget {
   const AptusWorkExperience({super.key});

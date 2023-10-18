@@ -3,8 +3,8 @@ import 'package:fluent_ui/fluent_ui.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_flutter/widgets/about/about_pane.dart';
-import 'package:portfolio_flutter/widgets/common/portfolio_text.dart';
 import 'package:portfolio_flutter/widgets/experience/experience_pane.dart';
+import 'package:portfolio_flutter/widgets/portfolio/portfolio_text.dart';
 import 'package:portfolio_flutter/widgets/projects/projects.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 

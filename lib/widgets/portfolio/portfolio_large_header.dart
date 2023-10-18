@@ -1,16 +1,18 @@
 import 'package:fluent_ui/fluent_ui.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:portfolio_flutter/widgets/portfolio/portfolio_text.dart';
 
-class PortfolioMediumHeader extends StatelessWidget {
+class PortfolioLargeHeader extends StatelessWidget {
   final String text;
-  const PortfolioMediumHeader(this.text, {super.key});
+
+  const PortfolioLargeHeader(this.text, {super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Text(
+    return PortfolioText(
       text,
       style: GoogleFonts.notoSans(
-        fontSize: 24,
+        fontSize: 30,
         fontWeight: FontWeight.bold,
       ),
     );

@@ -1,10 +1,10 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:fluent_ui/fluent_ui.dart';
-import 'package:portfolio_flutter/widgets/common/portfolio_large_header.dart';
 import 'package:portfolio_flutter/widgets/about/resume_button.dart';
 import 'package:portfolio_flutter/widgets/about/technical_skills/technical_skills_list.dart';
-import 'package:portfolio_flutter/widgets/common/portfolio_text.dart';
-import 'package:portfolio_flutter/widgets/common/portfolio_header.dart';
+import 'package:portfolio_flutter/widgets/portfolio/portfolio_header.dart';
+import 'package:portfolio_flutter/widgets/portfolio/portfolio_large_header.dart';
+import 'package:portfolio_flutter/widgets/portfolio/portfolio_text.dart';
 
 class AboutPane extends StatelessWidget {
   const AboutPane({super.key});
