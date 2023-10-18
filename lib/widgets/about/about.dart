@@ -40,7 +40,22 @@ class About extends StatelessWidget {
               ),
             ),
           ),
-        )
+        ),
+        const Padding(
+          padding: EdgeInsets.all(8.0),
+          child: ExperienceHeader('Here are some of my technical skills:'),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: ResponsiveBuilder(
+            builder: (context, sizingInformation) {
+              if (sizingInformation.isDesktop) {
+                return const SkillsRow();
+              }
+              return const SkillsList();
+            },
+          ),
+        ),
       ],
     );
   }
