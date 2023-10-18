@@ -14,25 +14,23 @@ class TechnicalStackItemStandard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      child: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Row(
-          children: [
-            Padding(
-              padding: const EdgeInsets.only(right: 8.0),
-              child: SvgPicture.asset(
-                svg,
-                height: 32,
-                width: 32,
-              ),
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Row(
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(right: 8.0),
+            child: SvgPicture.asset(
+              svg,
+              height: 32,
+              width: 32,
             ),
-            PortfolioText(
-              text,
-              overflow: TextOverflow.ellipsis,
-            ),
-          ],
-        ),
+          ),
+          PortfolioText(
+            text,
+            overflow: TextOverflow.ellipsis,
+          ),
+        ],
       ),
     );
   }
