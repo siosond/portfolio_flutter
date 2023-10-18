@@ -70,7 +70,6 @@ class _PortfolioState extends State<Portfolio> {
               ),
             ),
           ),
-          // PaneItemSeparator(),
           PaneItem(
             icon: const Icon(Icons.work),
             title: NotoSansText(tr('experience')),

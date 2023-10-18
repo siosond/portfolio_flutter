@@ -3,6 +3,7 @@ import 'package:fluent_ui/fluent_ui.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_flutter/widgets/common/noto_sans_text.dart';
 import 'package:portfolio_flutter/widgets/projects/common/project_expander.dart';
+import 'package:portfolio_flutter/widgets/projects/common/project_tech_stack.dart';
 import 'package:portfolio_flutter/widgets/projects/common/project_tile.dart';
 
 class Projects extends StatelessWidget {
@@ -33,7 +34,7 @@ class Projects extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: ProjectExpander(
-            height: 280,
+            height: 344,
             text: tr('proj_cafe24_plusapp'),
             initiallyExpanded: true,
             children: [
@@ -67,13 +68,29 @@ class Projects extends StatelessWidget {
                 url:
                     'https://play.google.com/store/apps/details?id=com.cafe24.ec.plusspao',
               ),
+              ProjectTechStack(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Card(child: NotoSansText('Android')),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Card(child: NotoSansText('Kotlin')),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Card(child: NotoSansText('Java')),
+                  ),
+                ],
+              ),
             ],
           ),
         ),
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: ProjectExpander(
-            height: 58,
+            height: 120,
             text: tr('proj_cafe24_crew_apps'),
             children: [
               ProjectTile(
@@ -82,13 +99,29 @@ class Projects extends StatelessWidget {
                 url:
                     'https://play.google.com/store/apps/details?id=com.cafe24.loginfingerprint',
               ),
+              ProjectTechStack(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Card(child: NotoSansText('Android')),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Card(child: NotoSansText('Flutter')),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Card(child: NotoSansText('Dart')),
+                  ),
+                ],
+              ),
             ],
           ),
         ),
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: ProjectExpander(
-            height: 58,
+            height: 120,
             text: tr('proj_cafe24_promotion_bridge'),
             children: [
               ProjectTile(
@@ -96,6 +129,22 @@ class Projects extends StatelessWidget {
                 name: tr('proj_cafe24_promotion_bridge_app'),
                 url:
                     'https://play.google.com/store/apps/details?id=com.cafe24.promotion.bridge',
+              ),
+              ProjectTechStack(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Card(child: NotoSansText('Android')),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Card(child: NotoSansText('Flutter')),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Card(child: NotoSansText('Dart')),
+                  ),
+                ],
               ),
             ],
           ),

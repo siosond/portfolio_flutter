@@ -24,6 +24,7 @@ class ProjectExpander extends StatelessWidget {
         height: height,
         child: SingleChildScrollView(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: children,
           ),
         ),
