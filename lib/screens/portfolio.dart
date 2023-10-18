@@ -18,93 +18,116 @@ class Portfolio extends StatefulWidget {
 }
 
 class _PortfolioState extends State<Portfolio> {
+  late Future googleFontsPending;
   var selected = 0;
 
   @override
+  void initState() {
+    super.initState();
+    setState(() {
+      googleFontsPending = GoogleFonts.pendingFonts([
+        GoogleFonts.notoSans(),
+      ]);
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return NavigationView(
-      appBar: NavigationAppBar(
-        automaticallyImplyLeading: false,
-        height: 64,
-        title: ResponsiveBuilder(
-          builder: (context, sizingInformation) {
-            if (sizingInformation.isMobile) {
-              return PortfolioText(
-                widget.title,
-                style: GoogleFonts.notoSans(
-                  fontSize: 14,
-                  fontWeight: FontWeight.bold,
-                ),
-              );
-            }
-            return Padding(
-              padding: const EdgeInsets.only(top: 16.0),
-              child: PortfolioText(
-                widget.title,
-                style: GoogleFonts.notoSans(
-                  fontSize: 24,
-                ),
-              ),
-            );
-          },
-        ),
-      ),
-      pane: NavigationPane(
-        selected: selected,
-        onChanged: (value) {
-          setState(() {
-            selected = value;
-          });
-        }, // displayMode: PaneDisplayMode.top,
-        items: [
-          PaneItem(
-            icon: const Icon(Icons.person),
-            title: PortfolioText(tr('about')),
-            body: SingleChildScrollView(
-              child: Padding(
-                padding: EdgeInsets.symmetric(
-                  horizontal: MediaQuery.of(context).size.width * 0.1,
-                  vertical: MediaQuery.of(context).size.height * 0.05,
-                ),
-                child: const AboutPane(),
-              ),
+    return FutureBuilder(
+      future: googleFontsPending,
+      builder: (context, snapshot) {
+        if (snapshot.connectionState != ConnectionState.done) {
+          return const NavigationView(
+            content: Center(
+              child: ProgressRing(),
+            ),
+          );
+        }
+        return NavigationView(
+          appBar: NavigationAppBar(
+            automaticallyImplyLeading: false,
+            height: 64,
+            title: ResponsiveBuilder(
+              builder: (context, sizingInformation) {
+                if (sizingInformation.isMobile) {
+                  return PortfolioText(
+                    widget.title,
+                    style: GoogleFonts.notoSans(
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  );
+                }
+                return Padding(
+                  padding: const EdgeInsets.only(top: 16.0),
+                  child: PortfolioText(
+                    widget.title,
+                    style: GoogleFonts.notoSans(
+                      fontSize: 24,
+                    ),
+                  ),
+                );
+              },
             ),
           ),
-          PaneItem(
-            icon: const Icon(Icons.work),
-            title: PortfolioText(tr('experience')),
-            body: SingleChildScrollView(
-              child: Padding(
-                padding: EdgeInsets.symmetric(
-                  horizontal: MediaQuery.of(context).size.width * 0.1,
-                  vertical: MediaQuery.of(context).size.height * 0.05,
+          pane: NavigationPane(
+            selected: selected,
+            onChanged: (value) {
+              setState(() {
+                selected = value;
+              });
+            }, // displayMode: PaneDisplayMode.top,
+            items: [
+              PaneItem(
+                icon: const Icon(Icons.person),
+                title: PortfolioText(tr('about')),
+                body: SingleChildScrollView(
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(
+                      horizontal: MediaQuery.of(context).size.width * 0.1,
+                      vertical: MediaQuery.of(context).size.height * 0.05,
+                    ),
+                    child: const AboutPane(),
+                  ),
                 ),
-                child: const Experience(),
               ),
-            ),
-          ),
-          // PaneItemSeparator(),
-          PaneItem(
-            icon: const Icon(Icons.terminal),
-            title: PortfolioText(tr('projects')),
-            body: SingleChildScrollView(
-              child: Padding(
-                padding: EdgeInsets.symmetric(
-                  horizontal: MediaQuery.of(context).size.width * 0.1,
-                  vertical: MediaQuery.of(context).size.height * 0.05,
+              PaneItem(
+                icon: const Icon(Icons.work),
+                title: PortfolioText(tr('experience')),
+                body: SingleChildScrollView(
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(
+                      horizontal: MediaQuery.of(context).size.width * 0.1,
+                      vertical: MediaQuery.of(context).size.height * 0.05,
+                    ),
+                    child: const Experience(),
+                  ),
                 ),
-                child: const Projects(),
               ),
-            ),
+              // PaneItemSeparator(),
+              PaneItem(
+                icon: const Icon(Icons.terminal),
+                title: PortfolioText(tr('projects')),
+                body: SingleChildScrollView(
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(
+                      horizontal: MediaQuery.of(context).size.width * 0.1,
+                      vertical: MediaQuery.of(context).size.height * 0.05,
+                    ),
+                    child: const Projects(),
+                  ),
+                ),
+              ),
+              // PaneItemSeparator(),
+              PaneItem(
+                icon: const Icon(Icons.message),
+                title: PortfolioText(tr('contact')),
+                body: PortfolioText(tr('contact')),
+              ),
+            ],
           ),
-          // PaneItemSeparator(),
-          PaneItem(
-            icon: const Icon(Icons.message),
-            title: PortfolioText(tr('contact')),
-            body: PortfolioText(tr('contact')),
-          ),
-        ],
-      ),
+        );
+      },
     );
   }
 }
