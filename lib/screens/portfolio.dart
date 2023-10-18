@@ -107,7 +107,7 @@ class _PortfolioState extends State<Portfolio> {
               ),
               // PaneItemSeparator(),
               PaneItem(
-                icon: const Icon(Icons.terminal),
+                icon: const Icon(Icons.android),
                 title: PortfolioText(tr('project_header')),
                 body: SingleChildScrollView(
                   child: Padding(
