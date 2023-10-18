@@ -5,7 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_flutter/widgets/about/about_pane.dart';
 import 'package:portfolio_flutter/widgets/experience/experience_pane.dart';
 import 'package:portfolio_flutter/widgets/portfolio/portfolio_text.dart';
-import 'package:portfolio_flutter/widgets/projects/projects.dart';
+import 'package:portfolio_flutter/widgets/projects/projects_pane.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 class Portfolio extends StatefulWidget {
@@ -114,7 +114,7 @@ class _PortfolioState extends State<Portfolio> {
                       horizontal: MediaQuery.of(context).size.width * 0.1,
                       vertical: MediaQuery.of(context).size.height * 0.05,
                     ),
-                    child: const Projects(),
+                    child: const ProjectsPane(),
                   ),
                 ),
               ),

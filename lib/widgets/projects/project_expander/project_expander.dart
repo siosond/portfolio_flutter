@@ -6,6 +6,7 @@ class ProjectExpander extends StatelessWidget {
   final double height;
   final List<Widget> children;
   final String text;
+  final Widget? trailing;
 
   const ProjectExpander({
     required this.children,
@@ -13,11 +14,13 @@ class ProjectExpander extends StatelessWidget {
     required this.text,
     super.key,
     this.initiallyExpanded = false,
+    this.trailing,
   });
 
   @override
   Widget build(BuildContext context) {
     return Expander(
+      trailing: trailing,
       header: PortfolioSmallHeader(text),
       initiallyExpanded: initiallyExpanded,
       content: SizedBox(

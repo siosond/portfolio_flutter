@@ -1,7 +1,18 @@
 class Assets {
-  static const flutter = 'assets/images/skills/flutter.svg';
-  static const java = 'assets/images/skills/java.svg';
-  static const javascript = 'assets/images/skills/javascript.svg';
-  static const kotlin = 'assets/images/skills/kotlin.svg';
-  static const laravel = 'assets/images/skills/laravel.svg';
+  static const _images = 'assets/images/';
+  static const _plusApp = '${_images}plusapp/';
+  static const _skills = '${_images}skills/';
+  static const andar01 = '${_plusApp}andar01.webp';
+  static const crewApps = '${_images}cafe24-crew-apps.webp';
+  static const dart = '${_skills}dart.svg';
+  static const flutter = '${_skills}flutter.svg';
+  static const java = '${_skills}java.svg';
+  static const javascript = '${_skills}javascript.svg';
+  static const kotlin = '${_skills}kotlin.svg';
+  static const laravel = '${_skills}laravel.svg';
+  static const medicube0 = '${_plusApp}medicube0.webp';
+  static const promotionBridge = '${_images}promotion-bridge.webp';
+  static const smbm17109 = '${_plusApp}smbm17109.webp';
+  static const spao = '${_plusApp}spao.webp';
+  static const ygnext = '${_plusApp}ygnext.webp';
 }
