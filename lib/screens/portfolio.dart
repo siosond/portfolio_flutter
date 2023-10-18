@@ -5,6 +5,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_flutter/widgets/about/about.dart';
 import 'package:portfolio_flutter/widgets/common/noto_sans_text.dart';
 import 'package:portfolio_flutter/widgets/experience/experience.dart';
+import 'package:portfolio_flutter/widgets/projects/projects.dart';
+import 'package:responsive_builder/responsive_builder.dart';
 
 class Portfolio extends StatefulWidget {
   const Portfolio({super.key, required this.title});
@@ -23,14 +25,27 @@ class _PortfolioState extends State<Portfolio> {
       appBar: NavigationAppBar(
         automaticallyImplyLeading: false,
         height: 64,
-        title: Padding(
-          padding: const EdgeInsets.only(top: 16.0),
-          child: NotoSansText(
-            widget.title,
-            style: GoogleFonts.notoSans(
-              fontSize: 24,
-            ),
-          ),
+        title: ResponsiveBuilder(
+          builder: (context, sizingInformation) {
+            if (sizingInformation.isMobile) {
+              return NotoSansText(
+                widget.title,
+                style: GoogleFonts.notoSans(
+                  fontSize: 14,
+                  fontWeight: FontWeight.bold,
+                ),
+              );
+            }
+            return Padding(
+              padding: const EdgeInsets.only(top: 16.0),
+              child: NotoSansText(
+                widget.title,
+                style: GoogleFonts.notoSans(
+                  fontSize: 24,
+                ),
+              ),
+            );
+          },
         ),
       ),
       pane: NavigationPane(
@@ -40,7 +55,7 @@ class _PortfolioState extends State<Portfolio> {
             selected = value;
           });
         },
-        displayMode: PaneDisplayMode.top,
+        // displayMode: PaneDisplayMode.top,
         items: [
           PaneItem(
             icon: const Icon(Icons.person),
@@ -55,7 +70,7 @@ class _PortfolioState extends State<Portfolio> {
               ),
             ),
           ),
-          PaneItemSeparator(),
+          // PaneItemSeparator(),
           PaneItem(
             icon: const Icon(Icons.work),
             title: NotoSansText(tr('experience')),
@@ -69,13 +84,21 @@ class _PortfolioState extends State<Portfolio> {
               ),
             ),
           ),
-          PaneItemSeparator(),
+          // PaneItemSeparator(),
           PaneItem(
             icon: const Icon(Icons.terminal),
             title: NotoSansText(tr('projects')),
-            body: NotoSansText(tr('projects')),
+            body: SingleChildScrollView(
+              child: Padding(
+                padding: EdgeInsets.symmetric(
+                  horizontal: MediaQuery.of(context).size.width * 0.1,
+                  vertical: MediaQuery.of(context).size.height * 0.05,
+                ),
+                child: const Projects(),
+              ),
+            ),
           ),
-          PaneItemSeparator(),
+          // PaneItemSeparator(),
           PaneItem(
             icon: const Icon(Icons.message),
             title: NotoSansText(tr('contact')),
