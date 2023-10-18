@@ -1,8 +1,9 @@
 {
   "about": "About Me",
-  "about_introduction_header": "Hi there! My name's Daniel",
+  "about_introduction_header": "Hi there! My name's Daniel.",
   "about_introduction_item": "I am a software developer with 5 years of experience in software development, encompassing 3 years as a Mobile App Developer, where I specialized in the development of native Android and cross-platform Flutter applications, and an additional 2 years of experience as a Web Developer, focusing on the creation of web applications.",
   "about_skills_flutter_item": "3 years of experience developing cross-platform apps using Dart and Flutter.",
+  "about_skills_header": "Here are some of my technical skills:",
   "about_skills_java_item": "3 years of experience developing native Android apps using XML layout and Java.",
   "about_skills_javascript_item": "2 years of experience developing front-end apps using JQuery and vanilla JavaScript.",
   "about_skills_kotlin_item": "3 years of experience developing native Android apps using Jetpack Compose and Kotlin.",
