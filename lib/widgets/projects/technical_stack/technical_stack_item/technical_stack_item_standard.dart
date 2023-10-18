@@ -22,8 +22,8 @@ class TechnicalStackItemStandard extends StatelessWidget {
             padding: const EdgeInsets.only(right: 8.0),
             child: SvgPicture.asset(
               svg,
-              height: 32,
-              width: 32,
+              height: 16,
+              width: 16,
             ),
           ),
           PortfolioText(

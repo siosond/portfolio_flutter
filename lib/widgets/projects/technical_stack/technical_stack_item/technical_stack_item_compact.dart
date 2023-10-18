@@ -13,8 +13,8 @@ class TechnicalStackItemCompact extends StatelessWidget {
   Widget build(BuildContext context) {
     return SvgPicture.asset(
       svg,
-      height: 32,
-      width: 32,
+      height: 16,
+      width: 16,
     );
   }
 }

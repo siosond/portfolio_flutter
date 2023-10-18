@@ -15,13 +15,13 @@ class ContactCommandBar extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: CommandBar(
-          overflowBehavior: CommandBarOverflowBehavior.dynamicOverflow,
-          compactBreakpointWidth: 600,
+          overflowBehavior: CommandBarOverflowBehavior.wrap,
+          compactBreakpointWidth: 200,
           primaryItems: [
             CommandBarButton(
               icon: const Icon(
                 material.Icons.mail,
-                size: 24,
+                size: 16,
               ),
               label: PortfolioText('Mail'),
               onPressed: () {
@@ -31,8 +31,8 @@ class ContactCommandBar extends StatelessWidget {
             CommandBarButton(
               icon: SvgPicture.asset(
                 Assets.github,
-                height: 24,
-                width: 24,
+                height: 16,
+                width: 16,
               ),
               label: PortfolioText('GitHub'),
               onPressed: () {
@@ -42,8 +42,8 @@ class ContactCommandBar extends StatelessWidget {
             CommandBarButton(
               icon: Image.asset(
                 Assets.linkedIn,
-                height: 24,
-                width: 24,
+                height: 16,
+                width: 16,
               ),
               label: PortfolioText('LinkedIn'),
               onPressed: () {
@@ -53,8 +53,8 @@ class ContactCommandBar extends StatelessWidget {
             CommandBarButton(
               icon: Image.asset(
                 Assets.viber,
-                height: 24,
-                width: 24,
+                height: 16,
+                width: 16,
               ),
               label: PortfolioText('Viber'),
               onPressed: () {
