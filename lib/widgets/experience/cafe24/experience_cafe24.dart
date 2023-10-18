@@ -1,6 +1,5 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_flutter/widgets/common/noto_sans_text.dart';
 import 'package:portfolio_flutter/widgets/experience/common/experience_entry.dart';
 import 'package:portfolio_flutter/widgets/experience/common/experience_header.dart';

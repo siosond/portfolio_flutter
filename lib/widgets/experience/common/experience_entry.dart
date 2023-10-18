@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:fluent_ui/fluent_ui.dart';
 import 'package:portfolio_flutter/widgets/experience/common/experience_card.dart';
 import 'package:portfolio_flutter/widgets/experience/common/experience_period.dart';
 import 'package:responsive_builder/responsive_builder.dart';

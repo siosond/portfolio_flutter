@@ -36,9 +36,7 @@ class About extends StatelessWidget {
               padding: const EdgeInsets.all(4.0),
               child: NotoSansText(
                 tr('resume'),
-                style: GoogleFonts.notoSans(
-                  fontSize: 16
-                ),
+                style: GoogleFonts.notoSans(fontSize: 16),
               ),
             ),
           ),

@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:fluent_ui/fluent_ui.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class NotoSansText extends Text {
@@ -18,5 +18,5 @@ class NotoSansText extends Text {
     super.textWidthBasis,
     super.textHeightBehavior,
     super.selectionColor,
-  }) : super(style: style ?? GoogleFonts.notoSans());
+  }) : super(style: style ?? GoogleFonts.notoSans(fontSize: 16.0));
 }

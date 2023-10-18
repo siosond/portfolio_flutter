@@ -1,5 +1,5 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:flutter/material.dart';
+import 'package:fluent_ui/fluent_ui.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_flutter/widgets/common/noto_sans_text.dart';
 import 'package:portfolio_flutter/widgets/experience/aptus/experience_aptus.dart';
@@ -15,7 +15,7 @@ class Experience extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
-          padding: const EdgeInsets.symmetric(vertical: 8.0),
+          padding: const EdgeInsets.all(8.0),
           child: NotoSansText(
             tr("work_experience"),
             style: GoogleFonts.notoSans(
@@ -24,10 +24,16 @@ class Experience extends StatelessWidget {
             ),
           ),
         ),
-        const ExperienceCafe24(),
-        const ExperienceAptus(),
+        const Padding(
+          padding: EdgeInsets.all(8.0),
+          child: ExperienceCafe24(),
+        ),
+        const Padding(
+          padding: EdgeInsets.all(8.0),
+          child: ExperienceAptus(),
+        ),
         Padding(
-          padding: const EdgeInsets.symmetric(vertical: 16.0),
+          padding: const EdgeInsets.all(8.0),
           child: NotoSansText(
             tr("education"),
             style: GoogleFonts.notoSans(
@@ -36,7 +42,10 @@ class Experience extends StatelessWidget {
             ),
           ),
         ),
-        const ExperiencePUP(),
+        const Padding(
+          padding: EdgeInsets.all(8.0),
+          child: ExperiencePUP(),
+        ),
       ],
     );
   }

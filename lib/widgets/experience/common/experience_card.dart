@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:fluent_ui/fluent_ui.dart';
 
 class ExperienceCard extends StatelessWidget {
   final List<Widget> children;
@@ -11,8 +11,6 @@ class ExperienceCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: Theme.of(context).colorScheme.surfaceVariant,
-      elevation: 0,
       child: Padding(
         padding: const EdgeInsets.all(32.0),
         child: Column(

@@ -19,6 +19,7 @@ class Portfolio extends StatefulWidget {
 
 class _PortfolioState extends State<Portfolio> {
   var selected = 0;
+
   @override
   Widget build(BuildContext context) {
     return NavigationView(
@@ -54,8 +55,7 @@ class _PortfolioState extends State<Portfolio> {
           setState(() {
             selected = value;
           });
-        },
-        // displayMode: PaneDisplayMode.top,
+        }, // displayMode: PaneDisplayMode.top,
         items: [
           PaneItem(
             icon: const Icon(Icons.person),
