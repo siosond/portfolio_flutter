@@ -15,11 +15,9 @@ class YearPeriodRow extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Card(
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Icon(icon),
-          ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Icon(icon),
         ),
         Padding(
           padding: const EdgeInsets.all(8.0),
