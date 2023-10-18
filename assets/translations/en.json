@@ -1,5 +1,12 @@
 {
   "about": "About Me",
+  "about_hi_there": "Hi there! My name's Daniel",
+  "about_skills_flutter_item": "3 years of experience developing cross-platform apps using Dart and Flutter.",
+  "about_skills_java_item": "3 years of experience developing native Android apps using XML layout and Java.",
+  "about_skills_javascript_item": "2 years of experience developing front-end apps using JQuery and vanilla JavaScript.",
+  "about_skills_kotlin_item": "3 years of experience developing native Android apps using Jetpack Compose and Kotlin.",
+  "about_skills_laravel_item": "2 years of experience developing back-end apps using PHP and Laravel.",
+  "about_summary": "I am a software developer with 5 years of experience in software development, encompassing 3 years as a Mobile App Developer, where I specialized in the development of native Android and cross-platform Flutter applications, and an additional 2 years of experience as a Web Developer, focusing on the creation of web applications.",
   "contact": "Contact",
   "edu_pup_header": "Polytechnic University of the Philippines",
   "edu_pup_major": "Bachelor of Science in Computer Science",
@@ -38,10 +45,9 @@
   "proj_cafe24_plusapp_yg_select_app": "YG SELECT - Apps on Google Play",
   "proj_cafe24_promotion_bridge": "Promotion Bridge",
   "proj_cafe24_promotion_bridge_app": "프로모션 브릿지 - Apps on Google Play",
+  "proj_cafe24_sub": "Below are some of my projects that are publicly accessible and were created during my tenure with Cafe24 Philippines:",
+  "proj_header": "My Projects",
   "projects": "Projects",
   "resume": "Resume",
-  "work_experience": "Work Experience",
-  "about_summary": "Hi! I am a software developer with 5 years of experience in software development, encompassing 3 years as a Mobile App Developer, where I specialized in the development of native Android and cross-platform Flutter applications, and an additional 2 years of experience as a Web Developer, focusing on the creation of web applications.",
-  "proj_header": "My Projects",
-  "proj_cafe24_sub": "Below are some of my projects that are publicly accessible and were created during my tenure with Cafe24 Philippines:"
+  "work_experience": "Work Experience"
 }
