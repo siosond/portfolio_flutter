@@ -13,23 +13,23 @@ class ExperienceCafe24 extends StatelessWidget {
   Widget build(BuildContext context) {
     return ExperienceEntry(
       icon: Icons.work_history,
-      period: tr('exp_cafe24_year_period'),
+      period: tr('experience_cafe24_year_period'),
       children: [
-        ExperienceHeader(tr('exp_cafe24_header')),
-        ExperienceSubHeader(tr('exp_cafe24_app_dev')),
+        ExperienceHeader(tr('experience_cafe24_header')),
+        ExperienceSubHeader(tr('experience_cafe24_app_dev')),
         ExperienceItems(
           children: [
-            NotoSansText('• ${tr('exp_cafe24_item_1')}'),
-            NotoSansText('• ${tr('exp_cafe24_item_2')}'),
-            NotoSansText('• ${tr('exp_cafe24_item_3')}'),
-            NotoSansText('• ${tr('exp_cafe24_item_4')}'),
+            NotoSansText('• ${tr('experience_cafe24_item_1')}'),
+            NotoSansText('• ${tr('experience_cafe24_item_2')}'),
+            NotoSansText('• ${tr('experience_cafe24_item_3')}'),
+            NotoSansText('• ${tr('experience_cafe24_item_4')}'),
           ],
         ),
-        ExperienceSubHeader(tr('exp_cafe24_web_dev')),
+        ExperienceSubHeader(tr('experience_cafe24_web_dev')),
         ExperienceItems(
           children: [
-            NotoSansText('• ${tr('exp_cafe24_item_5')}'),
-            NotoSansText('• ${tr('exp_cafe24_item_6')}'),
+            NotoSansText('• ${tr('experience_cafe24_item_5')}'),
+            NotoSansText('• ${tr('experience_cafe24_item_6')}'),
           ],
         ),
       ],

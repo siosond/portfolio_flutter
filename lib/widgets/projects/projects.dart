@@ -17,7 +17,7 @@ class Projects extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: NotoSansText(
-            tr("proj_header"),
+            tr("project_header"),
             style: GoogleFonts.notoSans(
               fontSize: 24,
               fontWeight: FontWeight.bold,
@@ -27,7 +27,7 @@ class Projects extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: NotoSansText(
-            tr('proj_cafe24_sub'),
+            tr('project_cafe24_sub'),
             style: GoogleFonts.notoSans(fontSize: 16),
           ),
         ),
@@ -35,36 +35,36 @@ class Projects extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: ProjectExpander(
             height: 344,
-            text: tr('proj_cafe24_plusapp'),
+            text: tr('project_cafe24_plusapp'),
             initiallyExpanded: true,
             children: [
               ProjectTile(
                 image: 'images/plusapp/yg-select.webp',
-                name: tr('proj_cafe24_plusapp_yg_select_app'),
+                name: tr('project_cafe24_plusapp_yg_select_app'),
                 url:
                     'https://play.google.com/store/apps/details?id=com.makeshop.powerapp.ygnext',
               ),
               ProjectTile(
                 image: 'images/plusapp/&store.webp',
-                name: tr('proj_cafe24_plusapp_&store_app'),
+                name: tr('project_cafe24_plusapp_&store_app'),
                 url:
                     'https://play.google.com/store/apps/details?id=com.cafe24.ec.plussmbm17109',
               ),
               ProjectTile(
                 image: 'images/plusapp/andar.webp',
-                name: tr('proj_cafe24_plusapp_andar_app'),
+                name: tr('project_cafe24_plusapp_andar_app'),
                 url:
                     'https://play.google.com/store/apps/details?id=com.cafe24.ec.plusandar01',
               ),
               ProjectTile(
                 image: 'images/plusapp/medicube.webp',
-                name: tr('proj_cafe24_plusapp_medicube_app'),
+                name: tr('project_cafe24_plusapp_medicube_app'),
                 url:
                     'https://play.google.com/store/apps/details?id=com.cafe24.ec.plusmedicube0',
               ),
               ProjectTile(
                 image: 'images/plusapp/spao.webp',
-                name: tr('proj_cafe24_plusapp_spao'),
+                name: tr('project_cafe24_plusapp_spao'),
                 url:
                     'https://play.google.com/store/apps/details?id=com.cafe24.ec.plusspao',
               ),
@@ -91,11 +91,11 @@ class Projects extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: ProjectExpander(
             height: 120,
-            text: tr('proj_cafe24_crew_apps'),
+            text: tr('project_cafe24_crew_apps'),
             children: [
               ProjectTile(
                 image: 'images/cafe24-crew-apps.webp',
-                name: tr('proj_cafe24_crew_apps_app'),
+                name: tr('project_cafe24_crew_apps_app'),
                 url:
                     'https://play.google.com/store/apps/details?id=com.cafe24.loginfingerprint',
               ),
@@ -122,11 +122,11 @@ class Projects extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: ProjectExpander(
             height: 120,
-            text: tr('proj_cafe24_promotion_bridge'),
+            text: tr('project_cafe24_promotion_bridge'),
             children: [
               ProjectTile(
                 image: 'images/promotion-bridge.webp',
-                name: tr('proj_cafe24_promotion_bridge_app'),
+                name: tr('project_cafe24_promotion_bridge_app'),
                 url:
                     'https://play.google.com/store/apps/details?id=com.cafe24.promotion.bridge',
               ),

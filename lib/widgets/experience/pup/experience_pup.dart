@@ -11,10 +11,10 @@ class ExperiencePUP extends StatelessWidget {
   Widget build(BuildContext context) {
     return ExperienceEntry(
       icon: Icons.book,
-      period: tr('edu_pup_year_period'),
+      period: tr('education_pup_year_period'),
       children: [
-        ExperienceHeader(tr('edu_pup_header')),
-        NotoSansText(tr('edu_pup_major')),
+        ExperienceHeader(tr('education_pup_header')),
+        NotoSansText(tr('education_pup_major')),
       ],
     );
   }
