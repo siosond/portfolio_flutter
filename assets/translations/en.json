@@ -1,5 +1,12 @@
 {
   "about": "About Me",
+  "about_app_disclaimer_dart": "Dart and the related logo are trademarks of Google LLC. We are not endorsed by or affiliated with Google LLC.",
+  "about_app_disclaimer_flutter": "Flutter and the related logo are trademarks of Google LLC. We are not endorsed by or affiliated with Google LLC.",
+  "about_app_disclaimer_icon": "Some icons used in this project were sourced from the following project: https://github.com/PKief/vscode-material-icon-theme",
+  "about_app_disclaimer_trademark": "All trademarks, logos, and brand names are the property of their respective owners. All company, product, and service names used on this website are for identification purposes only. The use of these names, trademarks, and brands does not imply endorsement.",
+  "about_app_legal_information": "Legal Information",
+  "about_app_show_all_license": "View Licenses",
+  "about_app_version": "Version: ",
   "about_introduction_header": "Hi there! My name's Daniel.",
   "about_introduction_item": "I'm a software developer with 5 years of experience, including 3 years of experience in developing native and cross-platform mobile apps, and 2 years of experience in developing web applications.",
   "about_skills_flutter_item": "3 years of experience developing cross-platform apps using Dart and Flutter.",

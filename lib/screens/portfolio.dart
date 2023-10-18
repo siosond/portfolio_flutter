@@ -3,6 +3,7 @@ import 'package:fluent_ui/fluent_ui.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_flutter/widgets/about/about_pane.dart';
+import 'package:portfolio_flutter/widgets/about_app/about_app_pane.dart';
 import 'package:portfolio_flutter/widgets/contact/contact_pane.dart';
 import 'package:portfolio_flutter/widgets/experience/experience_pane.dart';
 import 'package:portfolio_flutter/widgets/portfolio/portfolio_text.dart';
@@ -130,6 +131,21 @@ class _PortfolioState extends State<Portfolio> {
                       vertical: MediaQuery.of(context).size.height * 0.05,
                     ),
                     child: const ContactPane(),
+                  ),
+                ),
+              ),
+            ],
+            footerItems: [
+              PaneItem(
+                icon: const Icon(Icons.help),
+                title: PortfolioText('About the App'),
+                body: SingleChildScrollView(
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(
+                      horizontal: MediaQuery.of(context).size.width * 0.1,
+                      vertical: MediaQuery.of(context).size.height * 0.05,
+                    ),
+                    child: const AboutAppPane(),
                   ),
                 ),
               ),
