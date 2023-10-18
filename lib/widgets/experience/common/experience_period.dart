@@ -37,7 +37,7 @@ class ExperiencePeriod extends StatelessWidget {
             Card(
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Icon(icon),
+                child: Icon(icon, size: 24),
               ),
             ),
             Padding(
