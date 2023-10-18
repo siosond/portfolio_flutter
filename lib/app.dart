@@ -15,7 +15,7 @@ class App extends StatelessWidget {
       supportedLocales: context.supportedLocales,
       theme: FluentThemeData(brightness: Brightness.light),
       themeMode: ThemeMode.system,
-      title: 'Daniel Sioson',
+      title: 'Daniel Sioson | Mobile App and Web Developer',
     );
   }
 }
