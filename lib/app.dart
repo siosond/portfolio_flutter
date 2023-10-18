@@ -8,14 +8,14 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FluentApp(
+      darkTheme: FluentThemeData(brightness: Brightness.dark),
       home: const Portfolio(title: 'Portfolio'),
       locale: context.locale,
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
-      themeMode: ThemeMode.system,
       theme: FluentThemeData(brightness: Brightness.light),
-      darkTheme: FluentThemeData(brightness: Brightness.dark),
-      title: 'Portfolio',
+      themeMode: ThemeMode.system,
+      title: 'Daniel Sioson',
     );
   }
 }
