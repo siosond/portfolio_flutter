@@ -94,7 +94,7 @@ class _PortfolioState extends State<Portfolio> {
               ),
               PaneItem(
                 icon: const Icon(Icons.work),
-                title: PortfolioText(tr('experience')),
+                title: PortfolioText(tr('work_experience_and_education')),
                 body: SingleChildScrollView(
                   child: Padding(
                     padding: EdgeInsets.symmetric(
@@ -108,7 +108,7 @@ class _PortfolioState extends State<Portfolio> {
               // PaneItemSeparator(),
               PaneItem(
                 icon: const Icon(Icons.terminal),
-                title: PortfolioText(tr('projects')),
+                title: PortfolioText(tr('project_header')),
                 body: SingleChildScrollView(
                   child: Padding(
                     padding: EdgeInsets.symmetric(
@@ -121,7 +121,7 @@ class _PortfolioState extends State<Portfolio> {
               ),
               // PaneItemSeparator(),
               PaneItem(
-                icon: const Icon(Icons.message),
+                icon: const Icon(Icons.mail),
                 title: PortfolioText(tr('contact')),
                 body: SingleChildScrollView(
                   child: Padding(
