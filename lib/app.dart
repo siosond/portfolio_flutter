@@ -12,7 +12,7 @@ class App extends StatelessWidget {
       locale: context.locale,
       localizationsDelegates: context.localizationDelegates,
       supportedLocales: context.supportedLocales,
-      themeMode: ThemeMode.light,
+      themeMode: ThemeMode.system,
       theme: FluentThemeData(brightness: Brightness.light),
       darkTheme: FluentThemeData(brightness: Brightness.dark),
       title: 'Portfolio',
