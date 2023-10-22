@@ -46,6 +46,22 @@ class _PortfolioState extends State<Portfolio> {
           );
         }
         return NavigationView(
+          transitionBuilder: (child, animation) {
+            return ResponsiveBuilder(
+              builder: (context, sizingInformation) {
+                if (sizingInformation.isMobile) {
+                  return HorizontalSlidePageTransition(
+                    animation: animation,
+                    child: child,
+                  );
+                }
+                return EntrancePageTransition(
+                  animation: animation,
+                  child: child,
+                );
+              },
+            );
+          },
           appBar: NavigationAppBar(
             automaticallyImplyLeading: false,
             height: 64,
@@ -78,7 +94,8 @@ class _PortfolioState extends State<Portfolio> {
               setState(() {
                 selected = value;
               });
-            }, // displayMode: PaneDisplayMode.top,
+            },
+            // displayMode: PaneDisplayMode.top,
             items: [
               PaneItem(
                 icon: const Icon(Icons.person),
