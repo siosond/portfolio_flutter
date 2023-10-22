@@ -6,6 +6,7 @@ import 'package:portfolio_flutter/widgets/about/about_pane.dart';
 import 'package:portfolio_flutter/widgets/about_app/about_app_pane.dart';
 import 'package:portfolio_flutter/widgets/contact/contact_pane.dart';
 import 'package:portfolio_flutter/widgets/experience/experience_pane.dart';
+import 'package:portfolio_flutter/widgets/portfolio/portfolio_scroll_view.dart';
 import 'package:portfolio_flutter/widgets/portfolio/portfolio_text.dart';
 import 'package:portfolio_flutter/widgets/projects/projects_pane.dart';
 import 'package:responsive_builder/responsive_builder.dart';
@@ -100,7 +101,7 @@ class _PortfolioState extends State<Portfolio> {
               PaneItem(
                 icon: const Icon(Icons.person),
                 title: PortfolioText(tr('about')),
-                body: SingleChildScrollView(
+                body: PortfolioScrollView(
                   child: Padding(
                     padding: EdgeInsets.symmetric(
                       horizontal: MediaQuery.of(context).size.width * 0.1,
@@ -113,7 +114,7 @@ class _PortfolioState extends State<Portfolio> {
               PaneItem(
                 icon: const Icon(Icons.work),
                 title: PortfolioText(tr('work_experience_and_education')),
-                body: SingleChildScrollView(
+                body: PortfolioScrollView(
                   child: Padding(
                     padding: EdgeInsets.symmetric(
                       horizontal: MediaQuery.of(context).size.width * 0.1,
@@ -127,7 +128,7 @@ class _PortfolioState extends State<Portfolio> {
               PaneItem(
                 icon: const Icon(Icons.android),
                 title: PortfolioText(tr('project_header')),
-                body: SingleChildScrollView(
+                body: PortfolioScrollView(
                   child: Padding(
                     padding: EdgeInsets.symmetric(
                       horizontal: MediaQuery.of(context).size.width * 0.1,
@@ -141,7 +142,7 @@ class _PortfolioState extends State<Portfolio> {
               PaneItem(
                 icon: const Icon(Icons.mail),
                 title: PortfolioText(tr('contact')),
-                body: SingleChildScrollView(
+                body: PortfolioScrollView(
                   child: Padding(
                     padding: EdgeInsets.symmetric(
                       horizontal: MediaQuery.of(context).size.width * 0.1,
@@ -156,7 +157,7 @@ class _PortfolioState extends State<Portfolio> {
               PaneItem(
                 icon: const Icon(Icons.help),
                 title: PortfolioText(tr('about_app')),
-                body: SingleChildScrollView(
+                body: PortfolioScrollView(
                   child: Padding(
                     padding: EdgeInsets.symmetric(
                       horizontal: MediaQuery.of(context).size.width * 0.1,

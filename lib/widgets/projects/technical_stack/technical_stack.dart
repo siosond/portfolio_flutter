@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio_flutter/widgets/portfolio/portfolio_scroll_view.dart';
 
 class TechnicalStack extends StatelessWidget {
   final List<Widget> children;
@@ -10,7 +11,7 @@ class TechnicalStack extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
+    return PortfolioScrollView(
       scrollDirection: Axis.horizontal,
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
