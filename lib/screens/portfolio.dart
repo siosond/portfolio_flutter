@@ -138,7 +138,7 @@ class _PortfolioState extends State<Portfolio> {
             footerItems: [
               PaneItem(
                 icon: const Icon(Icons.help),
-                title: PortfolioText('About the App'),
+                title: PortfolioText(tr('about_app')),
                 body: SingleChildScrollView(
                   child: Padding(
                     padding: EdgeInsets.symmetric(

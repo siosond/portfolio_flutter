@@ -1,5 +1,6 @@
 {
   "about": "About Me",
+  "about_app": "About Portfolio",
   "about_app_disclaimer_dart": "Dart and the related logo are trademarks of Google LLC. We are not endorsed by or affiliated with Google LLC.",
   "about_app_disclaimer_flutter": "Flutter and the related logo are trademarks of Google LLC. We are not endorsed by or affiliated with Google LLC.",
   "about_app_disclaimer_icon": "Some icons used in this project were sourced from the following project: https://github.com/PKief/vscode-material-icon-theme",
