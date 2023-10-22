@@ -10,7 +10,9 @@ class TechnicalSkillsList extends StatelessWidget {
   Widget build(BuildContext context) {
     return ResponsiveBuilder(
       builder: (context, sizingInformation) {
-        return sizingInformation.isMobile
+        return sizingInformation.isMobile ||
+                sizingInformation.isTablet ||
+                sizingInformation.isSmall
             ? const TechnicalSkillsColumnList()
             : const TechnicalSkillsRowList();
       },

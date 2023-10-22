@@ -22,8 +22,14 @@ class ExperienceEntryColumnItem extends StatelessWidget {
           icon: icon,
           text: period,
         ),
-        PortfolioCard(
-          children: children,
+        Row(
+          children: [
+            Expanded(
+              child: PortfolioCard(
+                children: children,
+              ),
+            ),
+          ],
         ),
       ],
     );
