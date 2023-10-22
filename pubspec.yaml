@@ -41,6 +41,7 @@ dependencies:
   google_fonts: ^6.1.0
   package_info_plus: ^4.2.0
   responsive_builder: ^0.7.0
+  smooth_scroll_multiplatform: ^1.0.8
 
 dev_dependencies:
   flutter_test:
