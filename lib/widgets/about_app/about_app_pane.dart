@@ -1,6 +1,5 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:fluent_ui/fluent_ui.dart';
-import 'package:flutter/material.dart' as material;
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:portfolio_flutter/widgets/portfolio/portfolio_medium_header.dart';
 import 'package:portfolio_flutter/widgets/portfolio/portfolio_text.dart';
@@ -50,21 +49,6 @@ class AboutAppPane extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: PortfolioText(tr('about_app_disclaimer_trademark')),
-        ),
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: FilledButton(
-            onPressed: () {
-              material.showLicensePage(
-                context: context,
-                applicationName: tr('portfolio'),
-              );
-            },
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: PortfolioText(tr('about_app_show_all_license')),
-            ),
-          ),
         ),
       ],
     );
