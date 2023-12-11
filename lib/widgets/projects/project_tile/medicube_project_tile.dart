@@ -5,9 +5,7 @@ import 'package:portfolio_flutter/constants/urls.dart';
 import 'package:portfolio_flutter/widgets/projects/project_tile/project_tile.dart';
 
 class MedicubeProjectTile extends StatelessWidget {
-  const MedicubeProjectTile({
-    super.key,
-  });
+  const MedicubeProjectTile({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -5,9 +5,7 @@ import 'package:portfolio_flutter/constants/urls.dart';
 import 'package:portfolio_flutter/widgets/projects/project_tile/project_tile.dart';
 
 class SMStoreProjectTile extends StatelessWidget {
-  const SMStoreProjectTile({
-    super.key,
-  });
+  const SMStoreProjectTile({super.key});
 
   @override
   Widget build(BuildContext context) {

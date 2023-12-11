@@ -5,9 +5,7 @@ import 'package:portfolio_flutter/constants/urls.dart';
 import 'package:portfolio_flutter/widgets/projects/project_tile/project_tile.dart';
 
 class AndarProjectTile extends StatelessWidget {
-  const AndarProjectTile({
-    super.key,
-  });
+  const AndarProjectTile({super.key});
 
   @override
   Widget build(BuildContext context) {

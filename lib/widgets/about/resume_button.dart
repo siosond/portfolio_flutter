@@ -8,7 +8,7 @@ import 'package:portfolio_flutter/constants/urls.dart';
 import 'package:portfolio_flutter/widgets/portfolio/portfolio_text.dart';
 
 class ResumeButton extends StatelessWidget {
-  const ResumeButton({Key? key}) : super(key: key);
+  const ResumeButton({super.key});
 
   @override
   Widget build(BuildContext context) {

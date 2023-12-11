@@ -5,7 +5,7 @@ import 'package:portfolio_flutter/widgets/portfolio/portfolio_medium_header.dart
 import 'package:portfolio_flutter/widgets/portfolio/portfolio_text.dart';
 
 class AboutAppPane extends StatelessWidget {
-  const AboutAppPane({Key? key}) : super(key: key);
+  const AboutAppPane({super.key});
 
   @override
   Widget build(BuildContext context) {

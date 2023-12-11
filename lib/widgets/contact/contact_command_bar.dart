@@ -7,7 +7,7 @@ import 'package:portfolio_flutter/utils/url_launcher.dart';
 import 'package:portfolio_flutter/widgets/portfolio/portfolio_text.dart';
 
 class ContactCommandBar extends StatelessWidget {
-  const ContactCommandBar({Key? key}) : super(key: key);
+  const ContactCommandBar({super.key});
 
   @override
   Widget build(BuildContext context) {
