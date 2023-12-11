@@ -14,8 +14,8 @@ class YearPeriod extends StatelessWidget {
     return ResponsiveBuilder(
       builder: (context, sizingInformation) {
         return sizingInformation.isMobile ||
-            sizingInformation.isTablet ||
-            sizingInformation.isSmall
+                sizingInformation.isTablet ||
+                sizingInformation.isSmall
             ? YearPeriodRow(
                 text,
                 icon: icon,
