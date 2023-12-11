@@ -39,7 +39,7 @@ dependencies:
   fluent_ui: ^4.8.2
   flutter_svg: ^2.0.9
   google_fonts: ^6.1.0
-  package_info_plus: ^4.2.0
+  package_info_plus: ^5.0.1
   responsive_builder: ^0.7.0
   smooth_scroll_multiplatform: ^1.0.8
 
