@@ -22,10 +22,10 @@ class AboutPane extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: PortfolioText(tr('about_introduction_item')),
         ),
-        const Padding(
-          padding: EdgeInsets.all(8.0),
-          child: ResumeButton(),
-        ),
+        // const Padding(
+        //   padding: EdgeInsets.all(8.0),
+        //   child: ResumeButton(),
+        // ),
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: PortfolioHeader(tr('about_skills_header')),
